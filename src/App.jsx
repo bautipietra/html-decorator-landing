@@ -1,10 +1,19 @@
+import { Docs } from './components/Docs'
+import { Footer } from './components/Footer'
+import { Home } from './components/Home'
+import { Nav } from './components/Nav'
+import './config/LoadHtmlDecorator.js'
+
 function App() {
   return (
-    <div data-theme='winter'>
-      <div>
-        <h1>App</h1>
+    <>
+      <div data-theme='winter' className='container m-auto'>
+        <Nav></Nav>
+        <Home></Home>
+        <Docs></Docs>
       </div>
-    </div>
+      <Footer></Footer>
+    </>
   )
 }
 
